@@ -6,7 +6,7 @@ site:
 content:
   sources:
     - url: ./
-      start_paths: [versions/v0.21, versions/v0.20, versions/v0.19, versions/v0.18, versions/v0.17, versions/v0.16, versions/v0.15, versions/v0.14, versions/v0.13, versions/v0.12, versions/v0.11]
+      start_paths: [product-docs/v0.21, product-docs/v0.20, product-docs/v0.19, product-docs/v0.18, product-docs/v0.17, product-docs/v0.16, product-docs/v0.15, product-docs/v0.14, product-docs/v0.13, product-docs/v0.12, product-docs/v0.11]
       branches: HEAD
 
 # Description: SUSE UI bundle
