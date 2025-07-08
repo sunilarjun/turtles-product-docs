@@ -19,9 +19,6 @@ clean:
 environment:
 	npm ci
 
-preview:
-	npx http-server build/site -c-1
-
 # Define variables for reuse
 TMP_DIR = tmp
 BUILD_DIR = build
