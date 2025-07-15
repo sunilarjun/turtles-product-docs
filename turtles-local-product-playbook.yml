@@ -1,7 +1,7 @@
 site:
   title: Cluster-API
   url: /
-  start_page: v0.21@cluster-api:en:product-index.adoc
+  start_page: v0.21@cluster-api:en:index.adoc
 
 content:
   sources:
@@ -19,7 +19,6 @@ ui:
 asciidoc:
   attributes:
     build-type: product
-    product_name: SUSE® Rancher Prime Cluster API
     page-pagination: ''
     page-toclevels: 4@
     tabs-sync-option: ''

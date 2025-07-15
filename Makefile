@@ -58,6 +58,7 @@ build: ## Build the site using a specified playbook. Usage: make build PLAYBOOK=
 
 .PHONY: local-community
 local-community: environment ## Build the site locally using the GitHub Pages playbook.
+	bin/switch-prod-comm community
 	$(MAKE) build PLAYBOOK=$(GH_PAGES_PLAYBOOK) LOG=$(GH_PAGES_LOG)
 
 .PHONY: remote

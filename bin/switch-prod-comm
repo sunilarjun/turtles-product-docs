@@ -35,8 +35,6 @@ fi
 docs_root="$(realpath $(dirname $0)/../docs)"
 echo "switch-prod-comm: Docs root: $docs_root"
 
-fetch_versions_list=("v0.21")
-
 for version in $(fetch_versions_list); do
   dprint "Processing $version"
   cd "$docs_root/$version" || px_error "failed to cd to $docs_root/$version"
