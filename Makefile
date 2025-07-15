@@ -1,8 +1,8 @@
-local:
+local-product:
 	mkdir -p tmp
 	npx antora --version
 	npx antora --stacktrace --log-format=pretty --log-level=info \
-		turtles-local-playbook.yml \
+		turtles-local-product-playbook.yml \
 		2>&1 | tee tmp/local-build.log 2>&1
 
 remote:
@@ -26,7 +26,7 @@ LOG_DIR = $(TMP_DIR)
 SITE_DIR = $(BUILD_DIR)/site
 
 # Playbooks
-GH_PAGES_PLAYBOOK = turtles-gh-pages-playbook.yml
+GH_PAGES_PLAYBOOK = turtles-local-community-playbook.yml
 REMOTE_PLAYBOOK = playbook-remote.yml
 DEV_PLAYBOOK = turtles-dev-playbook.yml
 
@@ -55,8 +55,8 @@ build: ## Build the site using a specified playbook. Usage: make build PLAYBOOK=
 		$(PLAYBOOK) \
 		2>&1 | tee $(LOG)
 
-.PHONY: gh-pages
-gh-pages: environment ## Build the site locally using the GitHub Pages playbook.
+.PHONY: local-community
+local-community: environment ## Build the site locally using the GitHub Pages playbook.
 	$(MAKE) build PLAYBOOK=$(GH_PAGES_PLAYBOOK) LOG=$(GH_PAGES_LOG)
 
 .PHONY: remote
@@ -104,4 +104,4 @@ verify-broken-links: ## Verify broken GitHub links in .adoc files.
 ##@ CI
 
 .PHONY: ci
-ci: environment gh-pages dev verify-broken-links ## Run the build and verification for continuous integration.
+ci: environment local-community dev verify-broken-links ## Run the build and verification for continuous integration.

@@ -1,0 +1,34 @@
+site:
+  title: Cluster-API
+  url: /
+  start_page: v0.21@cluster-api:en:product-index.adoc
+
+content:
+  sources:
+    - url: ./
+      start_paths: [docs/v0.21, docs/v0.20, docs/v0.19, docs/v0.18, docs/v0.17, docs/v0.16, docs/v0.15, docs/v0.14, docs/v0.13, docs/v0.12, docs/v0.11]
+      branches: HEAD
+
+# Description: SUSE UI bundle
+ui:
+  bundle:
+    url: https://github.com/SUSEdoc/dsc-style-bundle/blob/main/default-ui/ui-bundle.zip?raw=true
+    snapshot: true
+  supplemental_files: ./dsc-style-bundle/supplemental-files/rancher
+
+asciidoc:
+  attributes:
+    build-type: product
+    product_name: SUSE® Rancher Prime Cluster API
+    page-pagination: ''
+    page-toclevels: 4@
+    tabs-sync-option: ''
+  extensions:
+    - '@asciidoctor/tabs'
+antora:
+  extensions:
+  - require: '@antora/lunr-extension'
+  - require: '@springio/antora-xref-extension'
+
+output:
+  dir: build/site
