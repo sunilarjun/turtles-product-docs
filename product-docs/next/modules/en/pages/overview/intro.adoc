@@ -1,3 +1,0 @@
-= Introduction
-
-In this section, we will explore references in {product_name}.
