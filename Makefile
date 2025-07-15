@@ -1,5 +1,6 @@
 local-product:
 	mkdir -p tmp
+	bin/switch-prod-comm product
 	npx antora --version
 	npx antora --stacktrace --log-format=pretty --log-level=info \
 		turtles-local-product-playbook.yml \
@@ -77,9 +78,15 @@ environment: ## Install and update npm dependencies.
 
 ##@ Preview
 
-.PHONY: preview
-preview: ## Preview the site locally with http-server.
-	npx http-server $(SITE_DIR) -c-1
+.PHONY: preview-product
+preview-product: ## Preview the site locally with http-server.
+	npx http-server build/site-product -c-1 -p 8080
+
+##@ Preview
+
+.PHONY: preview-community
+preview-community: ## Preview the site locally with http-server.
+	npx http-server build/site-community -c-1 -p 8081
 
 ##@ Development
 

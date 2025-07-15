@@ -31,4 +31,4 @@ antora:
   - require: '@springio/antora-xref-extension'
 
 output:
-  dir: build/site
+  dir: build/site-product

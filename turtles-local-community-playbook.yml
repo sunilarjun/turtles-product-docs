@@ -34,4 +34,4 @@ antora:
   - require: '@antora/lunr-extension'
 
 output:
-  dir: build/site
+  dir: build/site-community
