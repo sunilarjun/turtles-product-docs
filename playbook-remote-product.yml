@@ -7,7 +7,7 @@ content:
   sources:
     - url: https://github.com/rancher/turtles-product-docs.git
       branches: [main]
-      start_paths: [product-docs/v0.21, product-docs/v0.20, product-docs/v0.19, product-docs/v0.18, product-docs/v0.17, product-docs/v0.16, product-docs/v0.15, product-docs/v0.14, product-docs/v0.13, product-docs/v0.12, product-docs/v0.11]
+      start_paths: [docs/v0.21, docs/v0.20, docs/v0.19, docs/v0.18, docs/v0.17, docs/v0.16, docs/v0.15, docs/v0.14, docs/v0.13, docs/v0.12, docs/v0.11]
 
 
 # Description: SUSE UI bundle
@@ -22,6 +22,7 @@ runtime:
 
 asciidoc:
   attributes:
+    build-type: product
     page-pagination: ''
     tabs-sync-option: ''
   extensions:

@@ -28,7 +28,7 @@ SITE_DIR = $(BUILD_DIR)/site
 # Playbooks
 GH_PAGES_PLAYBOOK = turtles-local-community-playbook.yml
 REMOTE_PLAYBOOK = playbook-remote.yml
-DEV_PLAYBOOK = turtles-dev-playbook.yml
+DEV_PLAYBOOK = turtles-dev-community-playbook.yml
 
 # Logs
 GH_PAGES_LOG = $(LOG_DIR)/gh-pages-build.log
