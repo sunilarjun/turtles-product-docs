@@ -6,7 +6,7 @@ site:
 content:
   sources:
     - url: ./
-      start_paths: [docs/next]
+      start_paths: [versions/next]
       branches: HEAD
       
 # Description: SUSE UI bundle
