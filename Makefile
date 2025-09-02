@@ -1,7 +1,7 @@
 # Set up environment
 environment:
 	npm ci
-# Build local and remote
+# Build Product or Community
 local-product:
 	mkdir -p tmp
 	bin/switch-prod-comm product
