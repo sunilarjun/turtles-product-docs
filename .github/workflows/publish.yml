@@ -24,7 +24,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
     - name: Configure Pages
       uses: actions/configure-pages@v5
     - name: Install Node.js
@@ -34,7 +34,7 @@ jobs:
     - name: Generate Site
       run: make gh-pages
     - name: Upload Artifacts
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v4
       with:
         path: build/site-community
     - name: Push the static site content to gh-pages branch

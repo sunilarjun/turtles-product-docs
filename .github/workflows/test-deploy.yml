@@ -11,7 +11,7 @@ jobs:
     name: Test deployment
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: recursive
       - uses: actions/setup-node@v4
@@ -26,7 +26,7 @@ jobs:
             --log-format=pretty \
             --log-level=info \
             --log-failure-level=warn \
-            turtles-local-playbook.yml 2>&1 | tee local-build.log 2>&1
+            turtles-local-community-playbook.yml 2>&1 | tee local-build.log 2>&1
             BUILD_STATUS=${PIPESTATUS[0]}
             if grep "INFO (asciidoctor)" local-build.log; then
               BUILD_STATUS=1
