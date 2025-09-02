@@ -32,7 +32,7 @@ if [ -z "$target_version" ]; then
 fi
 
 # shellcheck disable=SC2086,SC2046
-docs_root="$(realpath $(dirname $0)/../docs)"
+docs_root="$(realpath $(dirname $0)/../versions)"
 echo "switch-prod-comm: Docs root: $docs_root"
 
 for version in $(fetch_versions_list); do
