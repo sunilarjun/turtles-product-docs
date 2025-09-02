@@ -1,12 +1,12 @@
 site:
   title: Cluster-API
   url: /
-  start_page: v0.21@cluster-api:en:index.adoc
+  start_page: latest@cluster-api:en:index.adoc
 
 content:
   sources:
     - url: ./
-      start_paths: [docs/v0.21, docs/v0.20, docs/v0.19, docs/v0.18, docs/v0.17, docs/v0.16, docs/v0.15, docs/v0.14, docs/v0.13, docs/v0.12, docs/v0.11]
+      start_paths: [versions/latest, versions/v0.23, versions/v0.22, versions/v0.21, versions/v0.20, versions/v0.19, versions/v0.18, versions/v0.17, versions/v0.16, versions/v0.15, versions/v0.14, versions/v0.13, versions/v0.12, versions/v0.11]
       branches: HEAD
 
 # Description: SUSE UI bundle
