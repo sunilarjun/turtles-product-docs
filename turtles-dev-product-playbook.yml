@@ -1,7 +1,7 @@
 site:
   title: Rancher Turtles
   url: /
-  start_page: next@turtles:en:index.adoc
+  start_page: next@cluster-api:en:index.adoc
 
 content:
   sources:
@@ -12,13 +12,13 @@ content:
 # Description: SUSE UI bundle
 ui:
   bundle:
-    url: https://github.com/rancher/product-docs-ui/blob/main/build/ui-bundle.zip?raw=true
+    url: https://github.com/SUSEdoc/dsc-style-bundle/blob/main/default-ui/ui-bundle.zip?raw=true
     snapshot: true
-  supplemental_files: ./turtles-supplemental-files
+  supplemental_files: ./dsc-style-bundle/supplemental-files/rancher
 
 asciidoc:
   attributes:
-    build-type: community
+    build-type: product
     page-pagination: ''
     page-toclevels: 4@
     tabs-sync-option: ''
@@ -27,6 +27,7 @@ asciidoc:
 antora:
   extensions:
   - require: '@antora/lunr-extension'
+  - require: '@springio/antora-xref-extension'
 
 output:
-  dir: build/site-dev-community
+  dir: build/site-dev-product
