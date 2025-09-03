@@ -11,11 +11,7 @@ on:
 concurrency:
   group: github-pages
   cancel-in-progress: false
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,23 +28,27 @@ jobs:
       with:
         node-version: '18'
     - name: Generate Site
-      run: make gh-pages
+      run: make local-community
     - name: Upload Artifacts
       uses: actions/upload-pages-artifact@v4
       with:
         path: build/site-community
-    - name: Push the static site content to gh-pages branch
-      run: |
-        git config --global user.name "${{ github.actor }}"
-        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-        mv build/site-community ../site-temp
-        git checkout --orphan gh-pages
-        git rm -rf .
-        rm -rf node_modules tmp
-        mv ../site-temp/* .
-        git add .
-        git commit -m "Deploy to gh-pages branch"
-        git push --force origin gh-pages
+
+
+deploy:
+  name: Deploy to GitHub Pages
+  needs: build
+
+  permissions:
+    pages: write
+    id-token: write
+  
+  environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+
+  runs-on: ubuntu-latest
+  steps:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
