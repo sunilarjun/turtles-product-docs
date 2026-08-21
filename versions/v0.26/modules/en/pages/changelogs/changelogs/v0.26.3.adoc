@@ -1,10 +1,10 @@
 = v0.26.3
-:revdate: 2026-06-18
+:revdate: 2026-08-14
 :page-revdate: {revdate}
 
-== Release Date: 2026-06-18
-
 == Description
+
+Release Date: 2026-06-18
 
 This maintenance release primarily focuses on resolving security vulnerabilities and updating dependencies, including key updates to Kubernetes libraries alongside development and testing toolchains.
 
@@ -24,7 +24,7 @@ Review the full list of changes: https://github.com/rancher/turtles/compare/v0.2
 |===
 | Name | Created At | Updated At
 
-| link:https://github.com/rancher/turtles/releases/download/v0.26.3/rancher-turtles-0.26.3.tgz[rancher-turtles-0.26.3.tgz] | 2026-06-18 | 2026-06-18
+| https://github.com/rancher/turtles/releases/download/v0.26.3/rancher-turtles-0.26.3.tgz[rancher-turtles-0.26.3.tgz] | 2026-06-18 | 2026-06-18
 
 |===
 

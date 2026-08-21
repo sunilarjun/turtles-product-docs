@@ -1,10 +1,10 @@
 = v0.26.1
-:revdate: 2026-04-27
+:revdate: 2026-08-14
 :page-revdate: {revdate}
 
-== Release Date: 2026-04-24
-
 == Description
+
+Release Date: 2026-04-24
 
 [IMPORTANT]
 ====
@@ -42,7 +42,7 @@ Review the full list of changes: https://github.com/rancher/turtles/compare/v0.2
 |===
 | Name | Created At | Updated At
 
-| link:https://github.com/rancher/turtles/releases/download/v0.26.1/rancher-turtles-0.26.1.tgz[rancher-turtles-0.26.1.tgz] | 2026-04-24 | 2026-04-24
+| https://github.com/rancher/turtles/releases/download/v0.26.1/rancher-turtles-0.26.1.tgz[rancher-turtles-0.26.1.tgz] | 2026-04-24 | 2026-04-24
 
 |===
 

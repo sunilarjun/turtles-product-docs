@@ -1,10 +1,10 @@
 = v0.26.4
-:revdate: 2026-07-27
+:revdate: 2026-08-14
 :page-revdate: {revdate}
 
-== Release Date: 2026-07-21
-
 == Description
+
+Release Date: 2026-07-21
 
 This maintenance release includes a fix for cluster registration token handling, alongside routine dependency and toolchain updates.
 
@@ -51,7 +51,7 @@ Review the full list of changes: https://github.com/rancher/turtles/compare/v0.2
 |===
 | Name | Created At | Updated At
 
-| link:https://github.com/rancher/turtles/releases/download/v0.26.4/rancher-turtles-0.26.4.tgz[rancher-turtles-0.26.4.tgz] | 2026-07-21 | 2026-07-21
+| https://github.com/rancher/turtles/releases/download/v0.26.4/rancher-turtles-0.26.4.tgz[rancher-turtles-0.26.4.tgz] | 2026-07-21 | 2026-07-21
 
 |===
 
