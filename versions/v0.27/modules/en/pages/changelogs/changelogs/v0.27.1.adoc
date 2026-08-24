@@ -1,0 +1,42 @@
+= v0.27.1
+:revdate: 2026-08-24
+:page-revdate: {revdate}
+
+== Description
+
+Release Date: 2026-08-24
+
+This maintenance release primarily focuses on resolving security vulnerabilities and updating dependencies.
+
+=== Notable Changes
+
+* Chore: Enable AWS credential translation by default by @rancher-backport-assistant[bot] in https://github.com/rancher/turtles/pull/2707[#2707].
+* Bump providers chart to v0.27.1 by @salasberryfin in https://github.com/rancher/turtles/pull/2763[#2763].
+* Bump Go to 1.26.6 by @salasberryfin in https://github.com/rancher/turtles/pull/2748[#2748].
+* Bump CAPG to v1.13.1 by @salasberryfin in https://github.com/rancher/turtles/pull/2738[#2738].
+* Bump CAPZ to v1.26.0 by @anmazzotti in https://github.com/rancher/turtles/pull/2723[#2723].
+* Bump CAPI operator to v0.28.0 by @rancher-backport-assistant[bot] in https://github.com/rancher/turtles/pull/2667[#2667].
+
+=== Security
+
+* Chore(deps): Update module golang.org/x/mod to v0.40.0 by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2746[#2746].
+
+=== Bug Fixes
+
+* Fix: Use `need-a-cert.cattle.io/ca-bundle-mode` on ASO webhook Service by @rancher-backport-assistant[bot] in https://github.com/rancher/turtles/pull/2721[#2721].
+
+==== Full Changelog: 
+
+Review the full list of changes: https://github.com/rancher/turtles/compare/v0.27.0%E2%80%A6v0.27.1[v0.27.0...v0.27.1]
+
+== Download
+
+[cols="3,1,1" options="header" frame="all" grid="rows"]
+|===
+| Name | Created At | Updated At
+
+| https://github.com/rancher/turtles/releases/download/v0.27.1/rancher-turtles-0.27.1.tgz[rancher-turtles-0.27.1.tgz] | 2026-08-24 | 2026-08-24
+
+|===
+
+__Information retrieved from https://github.com/rancher/turtles/releases/tag/v0.27.1[v0.27.1 GitHub release].__
