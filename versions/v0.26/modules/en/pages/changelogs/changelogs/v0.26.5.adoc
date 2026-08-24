@@ -1,0 +1,48 @@
+= v0.26.5
+:revdate: 2026-08-24
+:page-revdate: {revdate}
+
+== Description
+
+Release Date: 2026-08-21
+
+This maintenance release includes routine security, dependency and toolchain updates.
+
+=== Notable Changes
+
+* Bump providers chart to v0.26.5.
+* Various security and GitHub Actions updates.
+
+=== Other Changes
+
+* Update ghcr.io/devcontainers/features/docker-in-docker Docker tag to v4 (release/v0.26) by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2650[#2650].
+* Update golang.org/x dependencies (release/v0.26) by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2653[#2653].
+* Bump golang to 1.25.12 and fix CVEs in dependencies by @furkatgofurov7 in https://github.com/rancher/turtles/pull/2659[#2659].
+* Update GitHub Actions to v7 (release/v0.26) (major) by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2651[#2651].
+* Update testing dependencies (release/v0.26) by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2654[#2654].
+* Update GitHub Actions (release/v0.26) by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2664[#2664].
+* Chore: Providers chart v0.26.4-unrc by @furkatgofurov7 in https://github.com/rancher/turtles/pull/2673[#2673].
+* Update GitHub Actions (release/v0.26) (major) by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2684[#2684].
+* Chore(deps): Update github actions (release/v0.26) by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2675[#2675].
+* [release/v0.26] Chore: Bump providers chart version to 0.26.5-rc.0 by @yiannistri in https://github.com/rancher/turtles/pull/2709[#2709].
+* Chore(deps): Update module github.com/go-git/go-git/v5 to v5.19.2 [security] (release/v0.26) by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2726[#2726].
+* [release/v0.26] Chore: Bump providers chart to 0.26.5-rc.1 by @yiannistri in https://github.com/rancher/turtles/pull/2735[#2735].
+* Chore(deps): Update module golang.org/x/mod to v0.40.0 [security] (release/v0.26) by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2747[#2747].
+* [release/v0.26] Update providers chart version by @salasberryfin in https://github.com/rancher/turtles/pull/2749[#2749].
+* Chore: Un-rc 0.26.5 providers chart by @furkatgofurov7 in https://github.com/rancher/turtles/pull/2759[#2759].
+
+==== Full Changelog: 
+
+Review the full list of changes: https://github.com/rancher/turtles/compare/v0.26.4%E2%80%A6v0.26.5[v0.26.4...v0.26.5]
+
+== Download
+
+[cols="3,1,1" options="header" frame="all" grid="rows"]
+|===
+| Name | Created At | Updated At
+
+| https://github.com/rancher/turtles/releases/download/v0.26.5/rancher-turtles-0.26.5.tgz[rancher-turtles-0.26.5.tgz] | 2026-08-21 | 2026-08-21
+
+|===
+
+__Information retrieved from https://github.com/rancher/turtles/releases/tag/v0.26.5[v0.26.5 GitHub release].__
