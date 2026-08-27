@@ -1,29 +1,28 @@
 = v0.27.1
-:revdate: 2026-08-24
+:revdate: 2026-08-27
 :page-revdate: {revdate}
 
 == Description
 
 Release Date: 2026-08-24
 
-This maintenance release primarily focuses on resolving security vulnerabilities and updating dependencies.
+This Turtles release includes several improvements including Go module and GitHub Actions dependency updates, and several security patches.
 
 === Notable Changes
 
-* Chore: Enable AWS credential translation by default by @rancher-backport-assistant[bot] in https://github.com/rancher/turtles/pull/2707[#2707].
-* Bump providers chart to v0.27.1 by @salasberryfin in https://github.com/rancher/turtles/pull/2763[#2763].
-* Bump Go to 1.26.6 by @salasberryfin in https://github.com/rancher/turtles/pull/2748[#2748].
-* Bump CAPG to v1.13.1 by @salasberryfin in https://github.com/rancher/turtles/pull/2738[#2738].
-* Bump CAPZ to v1.26.0 by @anmazzotti in https://github.com/rancher/turtles/pull/2723[#2723].
-* Bump CAPI operator to v0.28.0 by @rancher-backport-assistant[bot] in https://github.com/rancher/turtles/pull/2667[#2667].
+* Add support for CAPI v1.13.3 by @anmazzotti in https://github.com/rancher/turtles/pull/2630[#2630].
 
-=== Security
+=== Additions
 
-* Chore(deps): Update module golang.org/x/mod to v0.40.0 by @renovate-rancher[bot] in https://github.com/rancher/turtles/pull/2746[#2746].
+* Translate Rancher AWS Cloud Credentials by @salasberryfin in [https://github.com/rancher/turtles/pull/2511#2511].
 
 === Bug Fixes
 
-* Fix: Use `need-a-cert.cattle.io/ca-bundle-mode` on ASO webhook Service by @rancher-backport-assistant[bot] in https://github.com/rancher/turtles/pull/2721[#2721].
+* Remove empty roles placeholder from aggregated_role by @thehejik in https://github.com/rancher/turtles/pull/2577[#2577].
+* Update cluster registration token handling by @rancher-backport-assistant[bot] in https://github.com/rancher/turtles/pull/2638[#2638].
+* Add provisional AI policy by @kkaempf in https://github.com/rancher/turtles/pull/2320[#2320].
+* Improve Image Pull Secret Support by @HarrisonWAffel in https://github.com/rancher/turtles/pull/2335[#2335].
+* Return error from DefaultSynchronizer.Get instead of silently dropping it by @immanuwell in https://github.com/rancher/turtles/pull/2462[#2462].
 
 ==== Full Changelog: 
 
