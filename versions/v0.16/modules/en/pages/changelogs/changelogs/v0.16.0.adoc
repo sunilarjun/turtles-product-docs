@@ -1,5 +1,5 @@
 = "v0.16.0"
-:revdate: 2026-08-14
+:revdate: 2026-09-02
 :page-revdate: {revdate}
 
 == Description
@@ -98,7 +98,7 @@ This release of Rancher Turtles focuses on:
 * [updatecli] Bump CAPI Providers versions by @github-actions in https://github.com/rancher/turtles/pull/1057[#1057].
 * Bump CAPI Operator and other dependencies by @furkatgofurov7 in https://github.com/rancher/turtles/pull/1062[#1062].
 
-==== Full Changelog: 
+=== Full Changelog: 
 
 Review the full list of changes: https://github.com/rancher/turtles/compare/v0.15.0%E2%80%A6v0.16.0[v0.15.0...v0.16.0]
 

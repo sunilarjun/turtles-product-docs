@@ -1,5 +1,5 @@
 = v0.26.3
-:revdate: 2026-08-14
+:revdate: 2026-09-02
 :page-revdate: {revdate}
 
 == Description
@@ -14,7 +14,7 @@ This maintenance release primarily focuses on resolving security vulnerabilities
 * Bump rancher/kuberlr-kubectl to v7.1.0.
 * Bump k8s.io/* dependencies to v0.34.8.
 
-==== Full Changelog: 
+=== Full Changelog: 
 
 Review the full list of changes: https://github.com/rancher/turtles/compare/v0.26.2%E2%80%A6v0.26.3[v0.26.2...v0.26.3]
 
