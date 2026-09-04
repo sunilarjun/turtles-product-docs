@@ -8,7 +8,7 @@ Release Date: 2025-01-30
 
 This release of Rancher Turtles focuses on:
 
-* Updating Cluster API (CAPI) to v1.9+ .
+* Updating Cluster API (CAPI) to v1.9+.
 * Enhancing the build process by introducing cross-compilation to build multi-architecture images.
 * Fixing bugs and adding minor enhancements related to the experimental feature etcd snapshot and restore, Helm chart deprecated values, and support to use CA certificates stored in Rancher to import clusters using the agent TLS settings.
 * All imported CAPI clusters are now represented by the v3 clusters.management.cattle.io resource (if clusters were imported before this change was introduced, they're now automatically migrated). This completes the migration described in https://github.com/rancher/turtles/blob/main/docs/adr/0010-migrate-to-v3-cluster-resource.md[ADR 10].

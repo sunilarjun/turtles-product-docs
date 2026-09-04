@@ -11,10 +11,10 @@ This release of Rancher Turtles focuses on:
 * Documentation improvements and restructuring:
 ** Added examples for RKE2 based docker, vsphere, gcp, aws and azure clusters.
 ifeval::["{build-type}" == "product"]
-** [https://documentation.suse.com/cloudnative/cluster-api/latest/en/index.html](https://documentation.suse.com/cloudnative/cluster-api/latest/en/index.html) with support for automatic stable version display with redirect to latest documentation release.
+** Updated the https://documentation.suse.com/cloudnative/cluster-api/latest/en/index.html[{product_name} documentation] with support for automatic stable version display with redirect to latest documentation release.
 endif::[]
 ifeval::["{build-type}" == "community"]
-** [https://turtles.docs.rancher.com](https://turtles.docs.rancher.com) with support for automatic stable version display with redirect to latest documentation release.
+** Updated the https://turtles.docs.rancher.com[{product_name} Documentation] with support for automatic stable version display with redirect to latest documentation release.
 endif::[]
 * Updating Cluster API (CAPI) to v1.9.5 with support for cross-namespaced ClusterClasses.
 * New experimental scaffolded features.clusterclass-operations feature, which will provide support for rollout ClusterClass rebases in the future.
